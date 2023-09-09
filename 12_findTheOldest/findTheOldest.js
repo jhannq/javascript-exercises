@@ -1,6 +1,7 @@
 const findTheOldest = function(arr) {
     let oldest = 0;
     let oldestIndex = 0;
+    console.log(arr[oldest].name);
     for (let i = 0; i<arr.length; i++){
         // check if person has yearOfDeath
         // if not add current year 
@@ -15,7 +16,7 @@ const findTheOldest = function(arr) {
             oldestIndex = i;
         }
     }
-    return arr[oldestIndex].name;
+    return arr[oldestIndex];
 };
 
 // Do not edit below this line

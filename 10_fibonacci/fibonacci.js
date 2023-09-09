@@ -1,12 +1,18 @@
 const fibonacci = function(length) {
-let curr = 0 ;
-let next = 1;
-for (let i = 0; i< length; i++){
-next = curr + next;
-next ++;
-}
-return next;
-};
+    if (length < 0){
+        return "OOPS";
+    } else {
+        let a = 0 ;
+        let b = 1;
+        let c = 0;
+        for (let i = 0; i< length; i++){
+            c = a+b;
+            a =b;
+            b= c;
+        }
+        return a;
+        };
+    }
 
 // Do not edit below this line
 module.exports = fibonacci;
